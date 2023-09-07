@@ -1,29 +1,57 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+//Created Variables
+var uppercaseABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowercaseABC = "abcdefghijklmnopqrstuvwxyz";
+var numeric = "0123456789";
+var symbols = "!@#$%^&*()-=+";
+var charset = '';
+var password = '';
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
 //Prompts Length, Characters, Uppercase, Lowercase, Numeric, Special Characters.
 //Please choose a password length number between 8 - 128 characters.
+var generatePassword = prompt("Please choose a password length number between 8 - 128 characters.");
+if(passLength >= 8 && passLength <= 128) {
+}
+
 //Do you want you password to include Uppercase letters?
+var passTypeUpper = prompt("Do you want to include Uppercase characters?");
+  if ((passTypeUpper)) {
+    charset += uppercaseABC
+  }
+
 //Do you want your password to include Lowercase letters?
-//Do you want your password to have special characters?
-    
+var passTypeLower = prompt("Do you want to include Lowercase characters?");
+  if ((passTypeLower)) {
+    charset += lowercaseABC
+  }
+//Do you want your password to have numbers included?
+var passTypeNumeric = prompt("Do you want to include any numbers?");
+if ((passTypeNumeric)) {
+  charset += numeric
+}
 
+//Do you want your password to have any special characters?
+var passTypeSymbols = prompt("Do you want to include any special characters?");
+if ((passTypeSymbols)) {
+  charset += symbols
+}
 
-//Created Variables
-var uppercaseABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-var lowercaseABC = "abcdefghijklmnopqrstuvwxyz"
-var numeric = "0123456789"
-var symbols = "!@#$%^&*()-=+<>?/|':[]{}"
+for (var i=0; i <passLength; i++) {
+  var randomChar = charset[Math.floor(Math.random() * charset.length)]
+  console.log(randomChar)
+  password += randomChar
+}
 
