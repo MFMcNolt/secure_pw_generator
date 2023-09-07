@@ -21,7 +21,6 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-//Prompts Length, Characters, Uppercase, Lowercase, Numeric, Special Characters.
 //Please choose a password length number between 8 - 128 characters.
 function generatePassword () {
   var passLength = prompt("Please choose a password length number between 8 - 128 characters.");
