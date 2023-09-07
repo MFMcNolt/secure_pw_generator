@@ -7,26 +7,23 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
 
-//--------------------
-
-
-//Assignment Code
-var generateBtn = document.querySelector("#generate");
-
-//A function to get the password
-function getPassword()
+//Prompts Length, Characters, Uppercase, Lowercase, Numeric, Special Characters.
+//Please choose a password length number between 8 - 128 characters.
+//Do you want you password to include Uppercase letters?
+//Do you want your password to include Lowercase letters?
+//Do you want your password to have special characters?
     
+
+
 //Created Variables
 var uppercaseABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var lowercaseABC = "abcdefghijklmnopqrstuvwxyz"
 var numeric = "0123456789"
 var symbols = "!@#$%^&*()-=+<>?/|':[]{}"
-var multiSelect = "";
-var randomKey = "";
+
