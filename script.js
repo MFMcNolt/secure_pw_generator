@@ -51,15 +51,14 @@ function generatePassword () {
     charset += symbols
   }
   
-  for (var i=0; i < passLength; i++) {
+  for (var i = 0; i < passLength; i++) {
     var randomChar = charset[Math.floor(Math.random() * charset.length)]
     console.log(randomChar)
     password += randomChar
   }
-  
-  /*var passLength = '';
-  console.log(passLength);{
-  else {
-  alert('Be sure your submission is between 8 and 128 characters.');
-  }*/
+
+  var passLength = '';
+  console.log(passLength);
+  return password; 
+
 }
