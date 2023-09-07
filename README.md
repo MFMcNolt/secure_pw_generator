@@ -20,7 +20,7 @@ You will see the user experience below, which shows the prompts you will get as 
 
 
     ```md
-    ![alt text](https://github.com/MFMcNolt/secure_pw_generator/blob/f8a929ce1586fad450a84f8741c87f77315b65f5/assets/images/Screenshot.png)
+    ![alt text](https://raw.github.com/MFMcNolt/secure_pw_generator/blob/main/assets/images/Screenshot.png)
     ```
 
 ## Credits
