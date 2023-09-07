@@ -17,10 +17,8 @@ Once you have successfully completed the prompts, you will see a unique password
 
 You will see the user experience below, which shows the prompts you will get as well as the outcome of the generated secure password.
 
-
-
     ```md
-    ![alt text](https://raw.github.com/MFMcNolt/secure_pw_generator/blob/main/assets/images/Screenshot.png)
+    ![alt text](assets/images/Screenshot.png)
     ```
 
 ## Credits
